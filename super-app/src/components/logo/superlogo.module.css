@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Single_Day;
+  src: url("/src/assets/Single_Day/SingleDay-Regular.ttf");
+}
+.logo {
+  color: #72db73;
+  font-family: Single_Day;
+  font-size: 3.5vw;
+  font-style: normal;
+  /* font-weight: 400; */
+  line-height: 139.688%; /* 93.591px */
+  /* border: 2px solid red; */
+  width: fit-content;
+  /* margin: auto; */
+}

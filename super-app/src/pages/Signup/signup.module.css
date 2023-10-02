@@ -1,0 +1,51 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.pageContainer {
+  display: flex;
+}
+.leftsection {
+  width: 40%;
+  height: 100vh;
+  background: url("/src/assets/cover-reg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 750px;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("/src/assets/Roboto/Roboto-Bold.ttf");
+}
+.caption {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 2.27vw;
+  font-style: normal;
+  line-height: 141.688%;
+  letter-spacing: 1.1px;
+  position: absolute;
+  left: 4.75%;
+  top: 580px;
+  /* border: 2px solid red; */
+}
+.rightsection {
+  width: 60%;
+  height: 100vh;
+  background-color: black;
+}
+.logo {
+  margin-left: 18vw;
+  margin-top: 7vh;
+}
+.frm {
+  width: 85%;
+  margin: auto;
+  /* border: 1px solid red; */
+  padding-left: 10%;
+  padding-top: 2%;
+}
+@font-face {
+  font-family: DM Sans;
+  src: url("/src/assets/DM_Sans/static/DMSans-Bold.ttf");
+}
