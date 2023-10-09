@@ -1,0 +1,27 @@
+.cardContainer {
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 9.5vw;
+  width: 8.8vw;
+  /* border: 1px solid green; */
+  cursor: pointer;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 10px;
+  /* background: #ff5209; */
+
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 1.4vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.imageContaier {
+  width: 80%;
+  height: 55%;
+  margin: auto;
+  /* border: 1px solid black; */
+  margin-top: 10%;
+}

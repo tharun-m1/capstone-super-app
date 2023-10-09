@@ -85,7 +85,7 @@ function Form() {
       };
       localStorage.setItem("details", JSON.stringify(details));
       localStorage.setItem("authenticated", true);
-      navigate("dashboard");
+      navigate("categories");
     }
   };
   return (
