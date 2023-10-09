@@ -1,5 +1,7 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
+import styles from "./dashboard.module.css";
+import ProfileCard from "../../components/Profile/ProfileCard";
 function Dashboard() {
   // setTimeout(() => {
   //   localStorage.clear();
@@ -19,9 +21,16 @@ function Dashboard() {
     return <Navigate to="/" />;
   }
   return (
-    <div>
-      <h1>Dashboard</h1>
-    </div>
+    <>
+      <div className={styles.dashContainer}>
+        <div className={styles.leftSection}>
+          <div className={styles.cardContainer}>
+            <ProfileCard />{" "}
+          </div>
+        </div>
+        <div className={styles.rightSection}></div>
+      </div>
+    </>
   );
 }
 

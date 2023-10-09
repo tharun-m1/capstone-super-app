@@ -1,0 +1,15 @@
+.container {
+  width: 10vw;
+  height: 3vw;
+  padding-left: 12%;
+  padding-top: 6.8%;
+  border-radius: 36.947px;
+  background: #9f94ff;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105.688%; /* 29.751px */
+  letter-spacing: 0.563px;
+}
