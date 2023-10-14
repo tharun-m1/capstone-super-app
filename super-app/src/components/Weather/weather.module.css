@@ -1,0 +1,82 @@
+.weatherContainer {
+  display: flex;
+  flex-direction: column;
+  background: #101744;
+  height: 15vw;
+  width: 40vw;
+  border-radius: 33.428px;
+}
+.dateTimeContainer {
+  display: flex;
+  width: 100%;
+  height: 4vw;
+  justify-content: space-around;
+  padding-top: 0.7vw;
+  /* margin-left: 1vw; */
+  /* border: 1px solid red; */
+  color: #fff;
+  font-family: Roboto;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 141.688%; /* 78.013px */
+  letter-spacing: 1.101px;
+  border-top-right-radius: 33.428px;
+  border-top-left-radius: 33.428px;
+  background-color: rgba(255, 74, 222, 1);
+}
+.weather {
+  display: flex;
+  justify-content: space-around;
+}
+/* .weather div{} */
+.climate {
+  height: 8vw;
+  width: 12vw;
+  margin-top: 1vw;
+  /* background-color: yellow; */
+  /* align-items: center; */
+  /* border: 1px solid red; */
+  text-align: center;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%; /* 43.907px */
+  letter-spacing: 0.1vw;
+}
+.temperature {
+  height: 8vw;
+  width: 12vw;
+  margin-top: 1vw;
+  /* background-color: yellow; */
+  /* align-items: center; */
+  color: #fff;
+  font-family: Roboto;
+  font-size: 2.8vw;
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: 13%; 109.27px */
+  text-align: center;
+}
+.wind {
+  height: 8vw;
+  width: 12vw;
+  margin-top: 1vw;
+  /* background-color: yellow; */
+  /* align-items: center; */
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%; /* 34.362px */
+  text-align: center;
+}
+.line {
+  width: 1px;
+  background-color: white;
+  height: 58%;
+  margin-top: 2.1vw;
+}
