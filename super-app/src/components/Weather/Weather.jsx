@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./weather.module.css";
-import tempicon from "../../assets/tempicon.png";
+
 function Weather(props) {
   //   console.log("loading", typeof props.loading);
   //   console.log("DATE TIME in weather", props.date, props.time);

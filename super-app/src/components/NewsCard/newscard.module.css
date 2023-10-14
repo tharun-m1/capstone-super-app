@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 28vw;
+  height: 42vw;
+  /* background-color: yellow; */
+  /* border-radius: 19px; */
+}
+.image {
+  flex: 50%;
+  border-radius: 19px 19px 0px 0px;
+  z-index: 0;
+}
+.news {
+  flex: 50%;
+  background-color: white;
+  border-radius: 0px 0px 19px 19px;
+  padding: 1vw;
+}
+.title {
+  z-index: 1;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.74);
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1vw;
+  padding: 1vw;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123.688%; /* 39.58px */
+  letter-spacing: 0.64px;
+  position: relative;
+  top: -6vw;
+}

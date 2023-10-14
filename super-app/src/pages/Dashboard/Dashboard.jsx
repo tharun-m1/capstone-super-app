@@ -3,9 +3,11 @@ import { Navigate } from "react-router-dom";
 import styles from "./dashboard.module.css";
 import ProfileCard from "../../components/Profile/ProfileCard";
 import Weather from "../../components/Weather/Weather";
+import NewsCard from "../../components/NewsCard/NewsCard";
 function Dashboard() {
   const [weatherData, setWeatherData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [news, setNews] = useState(null);
   // const [date, setDate] = useState("");
   // const [time, setTime] = useState("");
   useEffect(() => {
@@ -29,8 +31,25 @@ function Dashboard() {
         console.error("Error fetching weather data:", error);
       });
   }, []);
-  let date;
-  let time;
+  const apiKey = "48be163fc45d4f19b37b705d5af1b59a";
+  const newsapiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+  useEffect(() => {
+    fetch(newsapiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.status === "ok") {
+          const articles = data.articles;
+          const randomIndex = Math.floor(Math.random() * articles.length);
+          setNews(articles[randomIndex]);
+          // setNews(data.articles);
+        } else {
+          console.error("Failed to fetch news:", data.message);
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }, []);
 
   if (
     !localStorage.getItem("dashboard") &&
@@ -58,7 +77,11 @@ function Dashboard() {
             <Weather weatherData={weatherData} />
           </div>
         </div>
-        <div className={styles.rightSection}></div>
+        <div className={styles.rightSection}>
+          <div className={styles.newsContainer}>
+            <NewsCard news={news} />
+          </div>
+        </div>
       </div>
     </>
   );
